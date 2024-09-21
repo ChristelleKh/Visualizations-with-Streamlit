@@ -10,6 +10,10 @@ import streamlit as st
 
 st.title('Educational Levels and Resources in Lebanon \:school::book:')
 
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image('C:/Users/User/Desktop/governorates-districts-of-lebanon.jpg')
+
 @st.cache_data
 def load_resources_data(nrows):
     df_edresources = pd.read_csv("https://linked.aub.edu.lb/pkgcube/data/766496d731ca34aa96a88c60f595617f_20240906_113458.csv", nrows=nrows)
