@@ -10,7 +10,7 @@ st.title('Educational Levels and Resources in Lebanon \:school::book:')
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
-    st.image('C:/Users/User/Desktop/governorates-districts-of-lebanon.jpg')
+    st.image('https://raw.githubusercontent.com/ChristelleKh/Visualizations-with-Streamlit/main/governorates-districts-of-lebanon.jpg')
 
 @st.cache_data
 def load_resources_data(nrows):
